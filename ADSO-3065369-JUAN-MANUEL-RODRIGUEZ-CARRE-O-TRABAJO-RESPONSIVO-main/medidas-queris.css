@@ -1,0 +1,41 @@
+/* Restablece el margen, el relleno y establece el modelo de caja para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Establece los estilos principales del cuerpo */
+body {
+    background-color: #afeb0b; /* Color de fondo verde claro */
+    font-family: 'Courier New', Courier, monospace; /* Familia tipográfica monospace */
+    margin: 0; /* Elimina cualquier margen predeterminado */
+    padding: 2rem; /* Agrega un relleno de 2rem */
+}
+
+h1{
+    text-align: center; /* Centra el texto del encabezado */
+    margin-top: 20px;   /* Agrega un margen superior de 20px */
+}
+
+p{
+    text-align: center; /* Centra el texto del párrafo */
+    margin-top: 10px; /* Agrega un margen superior de 20px */
+}
+
+/* Estilos específicos para pantallas con un ancho máximo de 600px */
+@media (max-width: 600px) {
+    body {
+        background-color: #ca1818; /* Cambia el color de fondo a rojo para pantallas pequeñas */
+    }
+}
+
+/* Estilos específicos para pantallas con un ancho máximo de 400px */
+@media (min-width: 400px) {
+    body {
+        background-color: #afeb0b; /* Vuelve al color verde claro para pantallas aún más pequeñas */
+    }
+}
+
+
+

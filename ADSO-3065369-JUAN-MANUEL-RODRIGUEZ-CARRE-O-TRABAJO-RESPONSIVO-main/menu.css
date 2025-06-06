@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f8fa;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 25px;
+  vertical-align: middle;
+  position: relative;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #e0e6f2;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+nav ul li button {
+  background: #f0f4ff;
+  color: #182848;
+  border: 2px solid #4b6cb7;
+  padding: 10px 22px;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(75, 108, 183, 0.4);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  vertical-align: middle;
+}
+
+nav ul li button:hover {
+  background-color: #4b6cb7;
+  color: #f0f4ff;
+  box-shadow: 0 5px 12px rgba(75, 108, 183, 0.7);
+}
+
+@media (max-width: 480px) {
+  nav ul li button {
+    width: 100%;          /* ocupa todo el ancho */
+    padding: 14px 0;      /* más alto para mejor toque */
+    font-size: 1.2rem;    /* texto más grande */
+    border-radius: 10px;  /* bordes más redondeados */
+  }
+}

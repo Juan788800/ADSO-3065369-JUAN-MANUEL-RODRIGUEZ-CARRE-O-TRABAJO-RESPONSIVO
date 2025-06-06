@@ -1,0 +1,39 @@
+¨*{
+    box-sizing: border-box;     /* Establece el modelo de caja para todos los elementos */
+    padding: 0;     /* Elimina el relleno predeterminado */
+    margin: 0;  /* Elimina el margen predeterminado */
+}
+
+
+.caja  {
+    width: 40px; /* Ancho de la caja */
+    background-color: #afeb0b; /* Color de fondo verde claro */
+    font-family: 'Courier New', Courier, monospace; /* Familia tipográfica monospace */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 2rem;   /* Agrega un relleno de 2rem */
+    text-align: center;     /* Centra el texto dentro de la caja */
+    margin: 2rem auto; /* Centra la caja horizontalmente */
+    font-size: 1.2rem;  /* Tamaño de fuente de 1.2rem */
+}
+
+
+@media (min-width:768px){
+    .caja {
+        width: 60px; /* Ancho de la caja para pantallas más grandes */
+        background-color: #ca1818; /* Cambia el color de fondo a rojo para pantallas más grandes */
+    }
+}
+
+@media (min-width:992px){
+    .caja{
+        width: 60px;    /* Ancho de la caja para pantallas aún más grandes */
+        background-color: orange; /* Cambia el color de fondo a naranja para pantallas aún más grandes */
+    }
+}
+
+@media(min-width:1200px){
+    .caja{
+        width: 60px; /* Ancho de la caja para pantallas aún más grandes */
+        background-color: cyan; /* Cambia el color de fondo a cian para pantallas aún más grandes */
+    }
+}

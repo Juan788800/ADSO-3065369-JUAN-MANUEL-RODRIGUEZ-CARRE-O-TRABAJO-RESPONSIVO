@@ -1,0 +1,100 @@
+/* 🔹 Aplica a todos los elementos del documento */
+* {
+    box-sizing: border-box; /* El ancho incluye el padding y el borde */
+    margin: 0;               /* Elimina márgenes por defecto */
+    padding: 0;  
+}
+
+/* 🔹 Estilo para títulos <h1> */
+h1 {
+    text-align: center;      /* Centra el texto horizontalmente */
+    margin-top: 40px;        /* Espacio superior de 40 píxeles */
+    color: rgb(0, 0, 0);     /* Color del texto negro */
+}
+
+/* 🔹 Estilo para imágenes <img> */
+img {
+    width: 40%;              /* Ocupa el 40% del ancho del contenedor */
+    height: auto;            /* Altura automática  */
+    display: block;          /* Hace que la imagen sea un bloque para poder centrarla */
+    margin: 0 auto;          /* Centra horizontalmente */
+    border: 20px solid black;/* Borde negro grueso */
+    margin-top: 40px;        /* Espacio superior */
+}
+
+/* 🔹 Estilo para párrafos <p> */
+p {
+    text-align: center;      /* Centra el texto */
+    margin-top: 40px;        /* Espacio superior */
+    font-size: 1.2rem;       /* Tamaño de letra mediano */
+    color: black;            /* Texto negro */
+}
+
+/* 🔹 Estilo para botones con clase .button */
+.button {
+    display: block;          /* El botón ocupa todo el ancho disponible */
+    margin: 32px auto;       /* Centrado horizontal con margen vertical */
+    padding: 0.7em 2em;      /* Relleno interno: vertical 0.7em, horizontal 2em */
+    font-size: 1rem;         /* Tamaño de fuente normal */
+    background: green;       /* Fondo verde */
+    color: white;            /* Texto blanco */
+    border: none;            /* Sin borde */
+    border-radius: 8px;      /* Bordes redondeados */
+    cursor: pointer;         /* Cursor tipo mano al pasar por encima */
+    text-align: center;      /* Centra el texto dentro del botón */
+    max-width: 100px;        /* Ancho máximo del botón */
+}
+
+/* 🔹 Estilo para contenedor tipo tarjeta con clase .card */
+.card {
+    border: 10px solid #000;     /* Borde negro grueso */
+    border-radius: 20px;         /* Bordes redondeados */
+    padding: 20px;               /* Espaciado interno */
+    margin: 5px auto;            /* Pequeño margen y centrado */
+    max-width: 600px;            /* Ancho máximo de 600px */
+    background-color: #0cddec;   
+    height: 850px;               /* Altura fija de la tarjeta */
+}
+
+/* 🔹 Media Query para pantallas desde 400px de ancho */
+@media (min-width:400px) {
+    img {
+        width: 40%;              /* Ocupa el 40% del ancho del contenedor */
+        height: auto;            /* Altura automática  */
+        display: block;          /* Hace que la imagen sea un bloque para poder centrarla */
+        margin: 0 auto;          /* Centra horizontalmente */
+        border: 20px solid black;/* Borde negro grueso */
+        margin-top: 40px;        /* Espacio superior */
+}
+    p {
+        font-size: 1.4rem;   /* Aumento del tamaño del texto */
+        margin-top: 32px;    /* Margen superior ajustado */
+    }
+}
+
+/* 🔹 Media Query para pantallas desde 992px de ancho */
+@media (min-width:992px) {
+    img {
+        width: 20%;              /* Ocupa el 40% del ancho del contenedor */
+        height: auto;            /* Altura automática  */
+        display: block;          /* Hace que la imagen sea un bloque para poder centrarla */
+        margin: 0 auto;          /* Centra horizontalmente */
+        border: 20px solid black;/* Borde negro grueso */
+        margin-top: 40px;        /* Espacio superior */
+}
+    p {
+        font-size: 1.5rem;   /* Aumento mayor de tamaño del texto */
+        margin-top: 40px;    /* Margen superior estándar */
+    }
+
+
+    .card {
+        border: 10px solid #000;     /* Borde negro grueso */
+        border-radius: 20px;         /* Bordes redondeados */
+        padding: 20px;               /* Espaciado interno */
+        margin: 5px auto;            /* Pequeño margen y centrado */
+        max-width: 100%;            /* Ancho máximo de 600px */
+        background-color: #0cecec;   /* Fondo azul*/
+        height: 950px;               /* Altura fija de la tarjeta */
+}
+}

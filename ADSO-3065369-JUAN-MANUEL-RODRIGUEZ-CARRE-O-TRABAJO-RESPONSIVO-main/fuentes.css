@@ -1,0 +1,31 @@
+/* Estilo base para pantallas pequeñas (móviles) */
+body {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.boton{
+    text-align: center;
+}
+
+/* A partir de 400px de ancho moviles */
+@media (min-width: 400px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* A partir de 900px de ancho (laptops y pantallas medianas) */
+@media (min-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* A partir de 1200px de ancho (pantallas grandes) */
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,29 @@
+/* Mostrar solo imagen móvil por defecto */
+.mobile-image {
+  display: block;
+}
+.desktop-image,
+.tablet-image {
+  display: none;
+}
+
+/* Mostrar imagen de tablet desde 600px hasta 1023px */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .mobile-image {
+    display: none;
+  }
+  .tablet-image {
+    display: block;
+  }
+}
+
+/* Mostrar imagen de escritorio desde 1024px en adelante */
+@media (min-width: 1024px) {
+  .mobile-image,
+  .tablet-image {
+    display: none;
+  }
+  .desktop-image {
+    display: block;
+  }
+}
